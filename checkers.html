@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers</title>
+    <style>
+        /* Configure the chessboard placeholder
+        the # CSS will look for an html element with the specific ID*/
+        #checkers {
+            width: 415px;
+            width: 415px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        /*Configure the checkers squares.*/
+        .square{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+        }
+
+        .black{
+            background-color:darkgray;
+        }
+        /*this will create a round checker piece with a border */
+        .checker{
+            width: 45px;
+            height: 45px;
+            margin: 2.5px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 4px gray;
+        }
+        /*this will make the piece ivory*/
+        .checker-w{
+            background-color: ivory;
+        }
+        /*this will make the checker piece black */
+        .checker-b{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+        <!--This span will hold the value of the selected checkers piece-->
+        <span id="selectedSquare" style="display: none;"></span>
+        <script src="checkers.js"></script>
+        <script>
+            //create the checkers board all in JavaScript
+            createBoard();
+        </script>
+    
+</body>
+</html>
